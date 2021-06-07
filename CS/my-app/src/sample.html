@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #button{
+      text-align: center;
+    }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("body").on({
+        mouseenter: function(){
+            $(this).css("background-color", "gray");
+        },  
+       
+        mouseleave: function(){
+            $(this).css("background-color", "red");
+        },
+       
+        dblclick: function(){
+            $(this).css("background-color", "yellow");
+        }
+    });
+});
+</script>
+</head>
+<body>
+
+<button id="click me" onclick="click ">click me</button>
+
+</body>
+</html>
